@@ -4,6 +4,7 @@
 import { createClient } from "@liveblocks/client";
 
 const Client = createClient({
+    throttle: 16,
     publicApiKey: process.env.NEXT_PUBLIC_LIVEBLOCKS__PUBLIC_KEY!
 })
 
